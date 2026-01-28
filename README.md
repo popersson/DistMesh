@@ -113,6 +113,7 @@ h0=min([hlead,htrail,hmax]);
 [p,t]=distmesh2d(fd,fh,h0,box,fix);
 ```
 ![](docs/images/ex06.png)
+
 ![](docs/images/ex06zoom.png)
 
 **Example: (Uniform Mesh on Unit Sphere)**
