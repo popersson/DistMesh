@@ -1,0 +1,11 @@
+# --- Standard MATLAB Garbage ---
+*.asv
+*.autosave
+slprj/
+*.slxc
+
+# *.mex* <-- Commented out for v1.0 and v1.1 to allow existing mex-files
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
