@@ -1,5 +1,11 @@
 # DistMesh - A Simple Mesh Generator in MATLAB
 
+### News (v1.2)
+**DistMesh v1.2** modernizes the original code in several ways:
+* **Pure MATLAB:** All C/MEX binaries have been removed. The code is now fully portable and JIT-optimized.
+* **Ease of Use:** Simply add the folders to your path (or run `startup.m`) and it works.
+* **Open Source:** The license has been changed to the **MIT License**.
+
 ## Description
 
 DistMesh is a simple MATLAB code for generation of unstructured triangular and tetrahedral meshes. It was developed by [Per-Olof Persson](https://persson.berkeley.edu) (now at [UC Berkeley](http://www.berkeley.edu)) and [Gilbert Strang](http://www-math.mit.edu/~gs) in the [Department of Mathematics](http://www-math.mit.edu) at [MIT](http://www.mit.edu). A detailed description of the program is provided in our SIAM Review paper, see documentation below.
