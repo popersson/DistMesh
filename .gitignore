@@ -3,8 +3,9 @@
 *.autosave
 slprj/
 *.slxc
-
-# *.mex* <-- Commented out for v1.0 and v1.1 to allow existing mex-files
+*.mex*
+*.dll
+*.o
 
 # --- OS Junk ---
 .DS_Store

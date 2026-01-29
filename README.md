@@ -33,7 +33,7 @@ You can download DistMesh directly from this repository:
 * **Download ZIP:** Click the green **Code** button at the top of this page and select **Download ZIP**.
 * **Specific Versions:** You can find both all releases on the [Releases page](../../releases).
 
-DistMesh is distributed under the [GNU GPL](http://www.gnu.org/copyleft/gpl.html); see the [License and Copyright](COPYRIGHT.TXT) notice for more information.
+DistMesh is distributed under the [MIT License](https://opensource.org/license/MIT); see the [License and Copyright](LICENSE) notice for more information.
 
 ## Documentation
 
