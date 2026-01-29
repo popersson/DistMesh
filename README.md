@@ -1,15 +1,5 @@
 # DistMesh - A Simple Mesh Generator in MATLAB
 
-**News (Mar 11, 2012)**
-
-I have not been maintaining/updating the distmesh code since I wrote it, but by popular request I have now posted a new version. The main differences and new features are:
-
-* New 3-D surface mesh generator `distmeshsurface.m`, type `help distmeshsurface` to see some examples.
-* Support for general implicit functions in `distmesh2d` and `distmeshsurface`. This means e.g. that an ellipse can be represented by the simple expression `phi(x,y)=(x/a)^2+(y/b)^2-1`, even if this is not a signed distance function.
-* Robustness improvements in `distmesh2d`, including removal of duplicated fix points, density control, and a final mesh cleanup.
-* Recompiled C-functions for 32/64-bit Windows, 64-bit Mac OS X, and 64-bit linux.
-* More examples and more consistent size functions in the examples, including a NACA0012 airfoil mesh. Type `help distmesh2d`, run the demo `meshdemo2d`, or just look at the examples further down on this page.
-
 ## Description
 
 DistMesh is a simple MATLAB code for generation of unstructured triangular and tetrahedral meshes. It was developed by [Per-Olof Persson](https://persson.berkeley.edu) (now at [UC Berkeley](http://www.berkeley.edu)) and [Gilbert Strang](http://www-math.mit.edu/~gs) in the [Department of Mathematics](http://www-math.mit.edu) at [MIT](http://www.mit.edu). A detailed description of the program is provided in our SIAM Review paper, see documentation below.
@@ -19,8 +9,6 @@ One reason that the code is short and simple is that the geometries are specifie
 For the actual mesh generation, DistMesh uses the Delaunay triangulation routine in MATLAB and tries to optimize the node locations by a force-based smoothing procedure. The topology is regularly updated by Delaunay. The boundary points are only allowed to move tangentially to the boundary by projections using the distance function. This iterative procedure typically results in very well-shaped meshes.
 
 Our aim with this code is simplicity, so that everyone can understand the code and modify it according to their needs. The code is not entirely robust (that is, it might not terminate and return a well-shaped mesh), and it is relatively slow. However, our current research shows that these issues can be resolved in an optimized C++ code, and we believe our simple MATLAB code is important for demonstration of the underlying principles.
-
-To use the code, simply download it from below and run it from MATLAB. For a quick demonstration, type `meshdemo2d` or `meshdemond`. For more details see the documentation.
 
 ## Download
 
@@ -35,6 +23,17 @@ You can download DistMesh directly from this repository:
 
 DistMesh is distributed under the [MIT License](https://opensource.org/license/MIT); see the [License and Copyright](LICENSE) notice for more information.
 
+## Quick Start
+
+1.  **Clone or Download** this repository.
+2.  **Open MATLAB** and navigate to the `DistMesh` folder.
+3.  Run the `startup` script to set the path.
+4.  Copy/paste one of the examples below to generate a sample mesh.
+
+## New Julia version
+
+If you prefer the [Julia language](https://julialang.org/), consider this [new Julia version of DistMesh](https://github.com/JuliaGeometry/DistMesh.jl). It is significantly faster than the original MATLAB code and the interface is modernized. Currently only 2D support.
+
 ## Documentation
 
 * P.-O. Persson, G. Strang, **A Simple Mesh Generator in MATLAB**.
@@ -47,7 +46,7 @@ DistMesh is distributed under the [MIT License](https://opensource.org/license/M
 
 * [Images](https://persson.berkeley.edu/distmesh/gallery_images.html)
 * [Movies](https://persson.berkeley.edu/distmesh/gallery_movies.html)
-* [Applications and Moving Meshes](https://persson.berkeley.edu/thesis)
+
 
 ## Examples
 
