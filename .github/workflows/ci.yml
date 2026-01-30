@@ -3,7 +3,7 @@ name: DistMesh CI
 # Run this workflow on push or pull request to the main branch
 on:
   push:
-    branches: [ main, modernize-v1.2 ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
