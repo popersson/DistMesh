@@ -1,4 +1,4 @@
-function tests = tDistMesh
+function tests = testDistMesh
 %TDISTMESH  Unit tests for DistMesh
 %   Run via: results = runtests('tests');
 
