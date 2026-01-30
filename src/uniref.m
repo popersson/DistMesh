@@ -2,7 +2,7 @@ function [p,t]=uniref(p,t,nref,fd,varargin)
 %UNIREF Uniform mesh refinement
 %   [P,T]=UNIREF(P,T,NREF,FD,FDARGS)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 if nargin<3, nref=1; end
 if nargin<4, fd={}; end

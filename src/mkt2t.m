@@ -2,7 +2,7 @@ function [t2t,t2n]=mkt2t(t)
 %MKT2T  Compute element connectivities from element indices.
 %   [T2T,T2N]=MKT2T(T)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 nt=size(t,1);
 dim=size(t,2)-1;

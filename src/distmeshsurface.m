@@ -32,7 +32,7 @@ function [p,t]=distmeshsurface(fd,fh,h0,bbox,varargin)
 %      fd=@(p) p(:,1).^2/4+p(:,2).^2/1+p(:,3).^2/1.5^2-1;
 %      [p,t]=distmeshsurface(fd,@huniform,0.2,[-2.1,-1.1,-1.6; 2.1,1.1,1.6]);
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 dptol=1e-4; ttol=.1; Fscale=1.2; deltat=.2; deps=sqrt(eps)*h0;
 

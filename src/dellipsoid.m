@@ -8,6 +8,8 @@ function d = dellipsoid(p, semiaxes)
 %   Algorithm: Newton's method on the Lagrange multiplier.
 %   Finds root 't' of:  sum( (a_i * p_i / (a_i^2 + t))^2 ) - 1 = 0
 
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
+
 % "C-style" coding (no array operations) for maximum JIT performance
     
     np = size(p, 1);

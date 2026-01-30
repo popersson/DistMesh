@@ -2,7 +2,7 @@ function e=boundedges(p,t)
 %BOUNDEDGES Find boundary edges from triangular mesh
 %   E=BOUNDEDGES(P,T)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 % Form all edges, non-duplicates are boundary edges
 edges=[t(:,[1,2]);

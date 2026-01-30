@@ -1,6 +1,6 @@
 function simpplot(p,t,expr,bcol,icol,nodes,tris)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 dim=size(p,2);
 switch dim

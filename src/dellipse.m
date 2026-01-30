@@ -7,6 +7,8 @@ function d = dellipse(p, semiaxes)
 %
 %   Based on Inigo Quilez's iterative solver.
 
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
+
 % "C-style" coding (no array operations) for maximum JIT performance
     
     np = size(p, 1);

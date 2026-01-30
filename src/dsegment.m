@@ -2,7 +2,7 @@ function d = dsegment(p, pv)
 %DSEGMENT  Compute distance from points p to the line segments in pv.
 %   D = DSEGMENT(P, PV)
 
-%   Copyright (C) 2004-2026 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
     
     np = size(p, 1);
     nvs = size(pv, 1);

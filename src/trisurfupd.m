@@ -1,6 +1,8 @@
 function [t,t2t,t2n] = trisurfupd(t, t2t, t2n, p)
 %TRISURFUPD
 
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
+
 % "C-style" coding (no array operations) for maximum JIT performance
 % See original code in trisurfupd_ref for better readability
     

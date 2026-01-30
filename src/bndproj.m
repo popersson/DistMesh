@@ -2,7 +2,7 @@ function p=bndproj(p,t,fd,varargin)
 %BNDPROJ Project boundary points to true boundary
 %   P=BNDPROJ(P,T,FD,FDARGS)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 deps=sqrt(eps)*max(max(p)-min(p));
 

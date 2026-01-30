@@ -5,7 +5,7 @@ function q=simpqual(p,t,type)
 %   TYPE == 1: Radius Ratio (default)
 %   TYPE == 2: Approximate
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 if nargin<3
   type=1;

@@ -1,5 +1,5 @@
 function h=huniform(p,varargin)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 h=ones(size(p,1),1);

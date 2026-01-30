@@ -2,7 +2,7 @@ function [p,t,pix]=fixmesh(p,t,ptol)
 %FIXMESH  Remove duplicated/unused nodes and fix element orientation.
 %   [P,T]=FIXMESH(P,T)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 if nargin<3, ptol=1024*eps; end
 if nargin>=2 & (isempty(p) | isempty(t)), pix=1:size(p,1); return; end

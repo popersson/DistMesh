@@ -53,8 +53,7 @@ function [p,t]=distmesh2d(fd,fh,h0,bbox,pfix,varargin)
 %
 %   See also: MESHDEMO2D, DISTMESHND, DELAUNAYN, TRIMESH.
 
-%   distmesh2d.m v1.1
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 dptol=.001; ttol=.1; Fscale=1.2; deltat=.2; geps=.001*h0; deps=sqrt(eps)*h0;
 densityctrlfreq=30;

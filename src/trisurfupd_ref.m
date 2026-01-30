@@ -1,6 +1,8 @@
 function [t,t2t,t2n] = trisurfupd_ref(t, t2t, t2n, p)
 %TRISURFUPD_REF
 
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
+    
 % Reference implementation - very slow (due to array allocations in the inner loops)
 % Use this for readability, but the JIT optimized trisurfupd for performance.
     

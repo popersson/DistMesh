@@ -1,6 +1,6 @@
 function [pc,r]=circumcenter(p,t)
 
-%   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
+%   Copyright (C) 2004-2026 Per-Olof Persson. MIT Licensed.
 
 nt=size(t,1);
 pc=zeros(nt,2);
