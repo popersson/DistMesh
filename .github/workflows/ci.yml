@@ -1,0 +1,30 @@
+name: DistMesh CI
+
+# Run this workflow on push or pull request to the main branch
+on:
+  push:
+    branches: [ main, modernize-v1.2 ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    name: Run MATLAB Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Check out the repository code
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Set up the MATLAB environment
+      # (This action installs MATLAB on the GitHub runner)
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+
+      # 3. Run the Test Suite
+      # This automatically finds tests in the "tests" folder.
+      - name: Run Tests
+        uses: matlab-actions/run-tests@v2
+        with:
+          select-by-folder: tests

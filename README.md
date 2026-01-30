@@ -1,3 +1,5 @@
+[![DistMesh CI](https://github.com/popersson/DistMesh/actions/workflows/ci.yml/badge.svg?branch=modernize-v1.2)](https://github.com/popersson/DistMesh/actions/workflows/ci.yml)
+
 # DistMesh - A Simple Mesh Generator in MATLAB
 
 ### News (v1.2)
