@@ -52,3 +52,46 @@ function testCircleMeshGeneration(testCase)
     testCase.verifyLessThan(max(d_vals), 0.05, ...
         'Some mesh points were significantly outside the geometry');
 end
+
+function testAllExamples(testCase)
+    % Dynamically find and run all example scripts to ensure no crashes.
+    
+    % 1. Find the examples folder
+    testFileDir = fileparts(mfilename('fullpath'));
+    rootDir = fileparts(testFileDir);
+    exDir = fullfile(rootDir, 'examples');
+    
+    % 2. Get list of example scripts (excluding the old big demo if kept)
+    files = dir(fullfile(exDir, 'ex*.m')); 
+    
+    if isempty(files)
+        % Don't fail if you haven't split them yet, just warn
+        return; 
+    end
+    
+    % 3. Run each one headless
+    origState = get(0, 'DefaultFigureVisible');
+    set(0, 'DefaultFigureVisible', 'off');
+    
+    try
+        for k = 1:length(files)
+            scriptName = files(k).name(1:end-2); % Remove .m
+            fprintf('Testing example: %s... ', scriptName);
+            
+            try
+                evalc(scriptName); % Run it (suppressing output)
+                fprintf('OK\n');
+            catch ME
+                fprintf('FAILED\n');
+                rethrow(ME); % Fail the test
+            end
+            
+            close all; % Cleanup figures
+        end
+    catch ME
+        set(0, 'DefaultFigureVisible', origState);
+        rethrow(ME);
+    end
+    
+    set(0, 'DefaultFigureVisible', origState);
+end

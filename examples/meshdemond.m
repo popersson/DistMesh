@@ -6,12 +6,12 @@ function meshdemond
 rand('state',1); % Always the same results
 set(gcf,'rend','opengl');
 
-disp('(9) 3-D Unit ball')
+disp('3-D Unit ball')
 fd=inline('sqrt(sum(p.^2,2))-1','p');
 [p,t]=distmeshnd(fd,@huniform,0.2,[-1,-1,-1;1,1,1],[]);
 post(p,t)
 
-disp('(10) Cylinder with hole')
+disp('Cylinder with hole')
 [p,t]=distmeshnd(@fd10,@fh10,0.1,[-1,-1,-1;1,1,1],[]);
 post(p,t)
 
