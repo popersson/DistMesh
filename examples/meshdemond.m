@@ -4,7 +4,6 @@ function meshdemond
 %   Copyright (C) 2004-2012 Per-Olof Persson. See COPYRIGHT.TXT for details.
 
 rand('state',1); % Always the same results
-set(gcf,'rend','opengl');
 
 disp('3-D Unit ball')
 fd=inline('sqrt(sum(p.^2,2))-1','p');

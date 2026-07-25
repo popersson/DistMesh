@@ -28,3 +28,4 @@ jobs:
         uses: matlab-actions/run-tests@v2
         with:
           select-by-folder: tests
+          output-detail: verbose
