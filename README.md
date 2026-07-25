@@ -1,4 +1,5 @@
 [![DistMesh CI](https://github.com/popersson/DistMesh/actions/workflows/ci.yml/badge.svg?branch=modernize-v1.2)](https://github.com/popersson/DistMesh/actions/workflows/ci.yml)
+[![Install with mip](https://img.shields.io/badge/install_with-mip-1565C0)](https://mip.sh/packages/distmesh)
 
 # DistMesh - A Simple Mesh Generator in MATLAB
 
@@ -18,25 +19,37 @@ For the actual mesh generation, DistMesh uses the Delaunay triangulation routine
 
 Our aim with this code is simplicity, so that everyone can understand the code and modify it according to their needs. The code is not entirely robust (that is, it might not terminate and return a well-shaped mesh), and it is relatively slow. However, our current research shows that these issues can be resolved in an optimized C++ code, and we believe our simple MATLAB code is important for demonstration of the underlying principles.
 
-## Download
+## Installation
 
-You can download DistMesh directly from this repository:
+### Install with [mip](https://mip.sh)
 
-* **Clone via Git:**
-    ```bash
-    git clone https://github.com/popersson/DistMesh.git
-    ```
-* **Download ZIP:** Click the green **Code** button at the top of this page and select **Download ZIP**.
-* **Specific Versions:** You can find both all releases on the [Releases page](../../releases).
+The easiest way to install DistMesh is via the [mip](https://mip.sh) package manager. In the MATLAB Command Window, run:
+```matlab
+mip install distmesh
+```
+To use DistMesh in your current MATLAB session, run:
+```matlab
+mip load distmesh
+```
+Then try one of the examples below to generate a sample mesh.
 
-DistMesh is distributed under the [MIT License](https://opensource.org/license/MIT); see the [License and Copyright](LICENSE) notice for more information.
+### Manual installation
 
-## Quick Start
+Alternatively, you can download DistMesh manually and add it to your MATLAB path:
 
 1.  **Clone or Download** this repository.
+    * **Clone via Git:**
+        ```bash
+        git clone https://github.com/popersson/DistMesh.git
+        ```
+    * **Download ZIP:** Click the green **Code** button at the top of this page and select **Download ZIP**.
+    * **Specific Versions:** You can find all releases on the [Releases page](../../releases).
+
 2.  **Open MATLAB** and navigate to the `DistMesh` folder.
 3.  Run the `startup` script to set the path.
 4.  Copy/paste one of the examples below to generate a sample mesh.
+
+DistMesh is distributed under the [MIT License](https://opensource.org/license/MIT); see the [License and Copyright](LICENSE) notice for more information.
 
 ## New Julia version
 
