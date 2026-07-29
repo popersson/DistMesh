@@ -87,7 +87,7 @@ while 1
     bars=[t(:,[1,2]);t(:,[1,3]);t(:,[2,3])];         % Interior bars duplicated
     bars=unique(sort(bars,2),'rows');                % Bars as node pairs
     % 5. Graphical output of the current mesh
-    cla,patch('vertices',p,'faces',t,'edgecol','k','facecol',[.8,.9,1]);
+    cla,patch('Vertices',p,'Faces',t,'EdgeColor','k','FaceColor',[.8,.9,1]);
     drawnow
   end
 
@@ -98,7 +98,7 @@ while 1
   L0=hbars*Fscale*sqrt(sum(L.^2)/sum(hbars.^2));     % L0 = Desired lengths
   
   % Density control - remove points that are too close
-  if mod(count,densityctrlfreq)==0 & any(L0>2*L)
+  if mod(count,densityctrlfreq)==0 && any(L0>2*L)
       p(setdiff(reshape(bars(L0>2*L,:),[],1),1:nfix),:)=[];
       N=size(p,1); pold=inf;
       continue;
